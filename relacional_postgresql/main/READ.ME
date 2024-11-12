@@ -1,6 +1,22 @@
-#Este arquivo contém todas as funções da estrutura do case. 
-#Dentro de main podemos ver o arquivo main.go, onde é arquitetado a API e 
-onde é chamado as funções de validação descritas no documento de fluxograma anexo na pasta fluxogramas.
+Este arquivo contém:
+
+-go.mod: gerenciamento de dependências em projetos Go;
+-go.sum: para garantir a integridade das dependências do seu projeto em Go;
+-main.go: contém a estrutura da API, a chamada das funções de validação e deixa rotas para possiveis get para o front, e chama a função salvaBanco para gravar somente os itens válidos no banco, separando-os em Usuario (para os CPFs) e 
+Empresa (para os CNPJs);
+-testa_separador.go: contém a função para detectar os separadores do arquivo e organizá-lo;
+-testa_nulos.go: contém a função para testar se o arquivo contém nulos na primary key e descartá-los;
+-testa_duplicados.go: contém a função para testar se o arquivo duplicados na primary key e descartá-los;
+-tira_acentos.go: contém a função para tirar os acentos dos títulos das colunas;
+-padr_maiusc.go: contém a função para padronizar as letras maiúsculas;
+-valida.go: contém a função para:
+  1. Valida o campo CPF, define qual tipos eles são: CPF ou CNPJs, se caso não for nenhum dos dois, ele tira.
+  2. Verifica se CPFs e CNPJs são válidos de acordo com as leis brasileiras, descartando os não validos.
+-banco.go: gravas os itens válidos, de acordo com sua classe, no banco postgres.
+
+*O fluxo não está funcional conforme explicado abaixo.
+
+
 
 #Infelizente não consegui fazer o código funcionar do backend até o banco de dados postgres e nem as classe (funções entre o main.go), conforme pedido,
 mas dei o meu melhor em aprender uma linguagem tão interessante como o GO e seu jeito de compilar os arquivos, foi tudo novo para mim, mas uma experiência 
