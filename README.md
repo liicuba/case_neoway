@@ -5,6 +5,9 @@ Case para empresa Neoway em GO
 ## Pasta base:
 contém a base_teste.txt e o descritivo do case.
 
+## Pasta fluxogramas: 
+contém todos os fluxos idealizados para este projeto.
+
 ## Pasta programas: 
 contém os títulos dos programas usados.
 
@@ -22,7 +25,7 @@ reunião presencial.
 
 ### Links usados
  
-- [Mapa Ordenado](https://github.com/jhonyzam/curso_golang/blob/main/aula_4/4%20-%20maps/map_ordenado.go)
+- [curso do Jhon](https://github.com/jhonyzam/curso_golang/blob/main/aula_4/4%20-%20maps/map_ordenado.go)
 - [Go Playground](https://go.dev/play/)
 - [Zed](https://zed.dev/download)
 - [Echo](https://echo.labstack.com/docs/cookbook/file-upload#client-1)
@@ -32,9 +35,7 @@ reunião presencial.
 
 
 ### Instrucoes
-
-executar `go run .` na pasta X
-
+  
 ## Para carregar o main.go no bash 
 
 1. Vá ate a pasta onde o main esta na sua máquina;
