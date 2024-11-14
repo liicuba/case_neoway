@@ -13,6 +13,6 @@
   - Verifica se CPFs e CNPJs são válidos de acordo com as leis brasileiras, descartando os não validos.
 10. banco.go: gravas os itens válidos, de acordo com sua classe, no banco postgres.
 
-** O fluxo não está funcional conforme explicado anteriormente. **
+## O fluxo não está funcional conforme explicado anteriormente.
 
 
